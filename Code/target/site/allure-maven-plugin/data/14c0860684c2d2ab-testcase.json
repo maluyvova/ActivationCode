@@ -1,0 +1,59 @@
+{
+  "uid" : "14c0860684c2d2ab",
+  "name" : "fireFox",
+  "title" : "Fire fox",
+  "time" : {
+    "start" : 1524087167294,
+    "stop" : 1524087188551,
+    "duration" : 21257
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "67bed6a2b16f3daa",
+    "name" : "Surefire suite : Surefire test",
+    "title" : "Surefire suite : Surefire test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "Surefire suite : Surefire test"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testMethod",
+    "value" : "fireFox"
+  }, {
+    "name" : "host",
+    "value" : "Tubi-MacBook-C02Q61ADFVH6"
+  }, {
+    "name" : "testSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "thread",
+    "value" : "18333@Tubi-MacBook-C02Q61ADFVH6.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "ActivationCode"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "testGroup",
+    "value" : "Surefire test"
+  }, {
+    "name" : "suite-title",
+    "value" : "Surefire suite : Surefire test"
+  } ],
+  "parameters" : [ ]
+}

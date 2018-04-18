@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>AndroidWeb xref</title>
+<link type="text/css" rel="stylesheet" href="../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="../../apidocs/Helpers/AndroidWeb.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <strong class="jxr_keyword">package</strong> Helpers;
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   <strong class="jxr_keyword">import</strong> java.net.MalformedURLException;
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <strong class="jxr_keyword">import</strong> java.util.ArrayList;
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>   <strong class="jxr_keyword">import</strong> java.util.List;
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   <strong class="jxr_keyword">import</strong> org.openqa.selenium.By;
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   <strong class="jxr_keyword">import</strong> org.openqa.selenium.WebElement;
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   <strong class="jxr_keyword">import</strong> org.openqa.selenium.interactions.Actions;
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <strong class="jxr_keyword">import</strong> org.openqa.selenium.support.ui.ExpectedConditions;
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>  <strong class="jxr_keyword">import</strong> org.openqa.selenium.support.ui.WebDriverWait;
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>  
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>  <strong class="jxr_keyword">import</strong> ActivationCode.URLS;
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  <strong class="jxr_keyword">import</strong> Screens.FireTVScreen;
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>  <strong class="jxr_keyword">import</strong> Screens.WebActivationSighnInScreen;
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>  <strong class="jxr_keyword">import</strong> Screens.WebFireTVGetCode;
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>  <strong class="jxr_keyword">import</strong> Screens.XpathForWebActivationSgnInScreen;
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>  <strong class="jxr_keyword">import</strong> io.appium.java_client.MobileBy;
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>  <strong class="jxr_keyword">import</strong> io.appium.java_client.android.AndroidDriver;
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>  <strong class="jxr_keyword">import</strong> io.appium.java_client.android.AndroidElement;
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>  <strong class="jxr_keyword">import</strong> org.testng.Assert;
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>  <strong class="jxr_keyword">import</strong> org.testng.annotations.Test;
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>  
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>  
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../Helpers/AndroidWeb.html">AndroidWeb</a> <strong class="jxr_keyword">extends</strong> <a href="../Helpers/ApiumStart.html">ApiumStart</a> <strong class="jxr_keyword">implements</strong> <a href="../Screens/XpathForWebActivationSgnInScreen.html">XpathForWebActivationSgnInScreen</a>  {
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>  
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>  
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>    <em class="jxr_comment">/*  public static WebElement waits(String xpath) throws MalformedURLException {</em>
+<a class="jxr_linenumber" name="L28" href="#L28">28</a>  <em class="jxr_comment">        AndroidDriver&lt;AndroidElement&gt; driver=capabilities();</em>
+<a class="jxr_linenumber" name="L29" href="#L29">29</a>  <em class="jxr_comment">        WebDriverWait wait = new WebDriverWait (driver,500);</em>
+<a class="jxr_linenumber" name="L30" href="#L30">30</a>  <em class="jxr_comment">        return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));</em>
+<a class="jxr_linenumber" name="L31" href="#L31">31</a>  <em class="jxr_comment">    }*/</em>
+<a class="jxr_linenumber" name="L32" href="#L32">32</a>  
+<a class="jxr_linenumber" name="L33" href="#L33">33</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">void</strong> androidWebChrome() <strong class="jxr_keyword">throws</strong> MalformedURLException, InterruptedException {
+<a class="jxr_linenumber" name="L34" href="#L34">34</a>          String code=WebFireTVGetCode.getCode(<span class="jxr_string">"Firefox"</span>);
+<a class="jxr_linenumber" name="L35" href="#L35">35</a>          AndroidDriver&lt;AndroidElement&gt; driver=capabilities();
+<a class="jxr_linenumber" name="L36" href="#L36">36</a>          Actions action =<strong class="jxr_keyword">new</strong> Actions(driver);
+<a class="jxr_linenumber" name="L37" href="#L37">37</a>          WebDriverWait wait = <strong class="jxr_keyword">new</strong> WebDriverWait (driver,500);
+<a class="jxr_linenumber" name="L38" href="#L38">38</a>          driver.get(URLS.webUrl);
+<a class="jxr_linenumber" name="L39" href="#L39">39</a>          WebElement signInButton=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(XpathForWebActivationSgnInScreen.signInButton)));
+<a class="jxr_linenumber" name="L40" href="#L40">40</a>          action.click(signInButton).build().perform();
+<a class="jxr_linenumber" name="L41" href="#L41">41</a>          <em class="jxr_comment">//action.click(waits(XpathForWebActivationSgnInScreen.signInButton)).click();</em>
+<a class="jxr_linenumber" name="L42" href="#L42">42</a>          WebElement emailField= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(XpathForWebActivationSgnInScreen.emailField)));
+<a class="jxr_linenumber" name="L43" href="#L43">43</a>          action.click(emailField).build().perform();
+<a class="jxr_linenumber" name="L44" href="#L44">44</a>          action.sendKeys(emailField, <span class="jxr_string">"vburian@tubi.tv"</span>).build().perform();
+<a class="jxr_linenumber" name="L45" href="#L45">45</a>          WebElement passwordlField= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(XpathForWebActivationSgnInScreen.passwordFiled)));
+<a class="jxr_linenumber" name="L46" href="#L46">46</a>          action.click(passwordlField).build().perform();
+<a class="jxr_linenumber" name="L47" href="#L47">47</a>          action.sendKeys(passwordlField, <span class="jxr_string">"tubitv"</span>).build().perform();
+<a class="jxr_linenumber" name="L48" href="#L48">48</a>          WebElement sumbitButtonForSignIn= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(XpathForWebActivationSgnInScreen.submitButoonForSignIn)));
+<a class="jxr_linenumber" name="L49" href="#L49">49</a>          action.click(sumbitButtonForSignIn).build().perform();
+<a class="jxr_linenumber" name="L50" href="#L50">50</a>          WebElement activationCodeField= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(XpathForWebActivationSgnInScreen.activationCodeField)));
+<a class="jxr_linenumber" name="L51" href="#L51">51</a>          action.moveToElement(activationCodeField).build().perform();
+<a class="jxr_linenumber" name="L52" href="#L52">52</a>          action.click(activationCodeField).build().perform();
+<a class="jxr_linenumber" name="L53" href="#L53">53</a>          action.sendKeys(activationCodeField,code).build().perform();
+<a class="jxr_linenumber" name="L54" href="#L54">54</a>          WebElement submitForActivationCodeField= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(XpathForWebActivationSgnInScreen.submitButtonForActivationCode)));
+<a class="jxr_linenumber" name="L55" href="#L55">55</a>          action.click(submitForActivationCodeField).build().perform();
+<a class="jxr_linenumber" name="L56" href="#L56">56</a>          WebElement homeButtonAfterActivationDevice= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(XpathForWebActivationSgnInScreen.homebuttonAfterActivationDevice)));
+<a class="jxr_linenumber" name="L57" href="#L57">57</a>          action.click(homeButtonAfterActivationDevice).build().perform();
+<a class="jxr_linenumber" name="L58" href="#L58">58</a>          ArrayList&lt;WebElement&gt; containerWithFeaturedTitles= (ArrayList&lt;WebElement&gt;) wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(XpathForWebActivationSgnInScreen.containerWithFeaturetTitles)));
+<a class="jxr_linenumber" name="L59" href="#L59">59</a>          <strong class="jxr_keyword">int</strong> size=containerWithFeaturedTitles.size();
+<a class="jxr_linenumber" name="L60" href="#L60">60</a>          <strong class="jxr_keyword">boolean</strong> ContainerFeaturedTitlesInFireTV=FireTVScreen.isContainerOfFeaturedTitlesDisplayed();
+<a class="jxr_linenumber" name="L61" href="#L61">61</a>          Assert.assertTrue(ContainerFeaturedTitlesInFireTV, <span class="jxr_string">"Featured titles is not displayed in FireTVScreen after activation in AndroidChrome"</span>);
+<a class="jxr_linenumber" name="L62" href="#L62">62</a>          Assert.assertEquals(1,size);
+<a class="jxr_linenumber" name="L63" href="#L63">63</a>      }
+<a class="jxr_linenumber" name="L64" href="#L64">64</a>  
+<a class="jxr_linenumber" name="L65" href="#L65">65</a>  
+<a class="jxr_linenumber" name="L66" href="#L66">66</a>  
+<a class="jxr_linenumber" name="L67" href="#L67">67</a>  
+<a class="jxr_linenumber" name="L68" href="#L68">68</a>  
+<a class="jxr_linenumber" name="L69" href="#L69">69</a>  }
+<a class="jxr_linenumber" name="L70" href="#L70">70</a>  
+</pre>
+<hr/>
+<div id="footer">Copyright &#169; 2018. All rights reserved.</div>
+</body>
+</html>

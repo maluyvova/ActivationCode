@@ -1,0 +1,59 @@
+{
+  "uid" : "c35c2f4fa33a75a5",
+  "name" : "chrome",
+  "title" : "Chrome",
+  "time" : {
+    "start" : 1524087150249,
+    "stop" : 1524087167290,
+    "duration" : 17041
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "67bed6a2b16f3daa",
+    "name" : "Surefire suite : Surefire test",
+    "title" : "Surefire suite : Surefire test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "Surefire suite : Surefire test"
+  }, {
+    "name" : "testMethod",
+    "value" : "chrome"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "host",
+    "value" : "Tubi-MacBook-C02Q61ADFVH6"
+  }, {
+    "name" : "testSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "thread",
+    "value" : "18333@Tubi-MacBook-C02Q61ADFVH6.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "ActivationCode"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "testGroup",
+    "value" : "Surefire test"
+  }, {
+    "name" : "suite-title",
+    "value" : "Surefire suite : Surefire test"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,12 @@
+Screens/XpathsForFireTVScreen.class
+Helpers/AndroidWeb.class
+Helpers/JavaScript.class
+Screens/FireTVScreen.class
+Helpers/ApiumStart.class
+Helpers/iOS.class
+ActivationCode/Driver.class
+ActivationCode/URLS.class
+Screens/WebFireTVGetCode.class
+Helpers/IosWebDriverStart.class
+Screens/XpathForWebActivationSgnInScreen.class
+Screens/WebActivationSighnInScreen.class

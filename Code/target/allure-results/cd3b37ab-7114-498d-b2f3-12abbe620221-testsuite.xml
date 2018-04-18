@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1524087103736" stop="1524087220275" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Surefire suite : Surefire test</name>
+    <title>Surefire suite : Surefire test</title>
+    <test-cases>
+        <test-case start="1524087103878" stop="1524087150244" status="passed">
+            <name>android</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Surefire suite"/>
+                <label name="testGroup" value="Surefire test"/>
+                <label name="testClass" value="ActivationCode"/>
+                <label name="testMethod" value="android"/>
+                <label name="host" value="Tubi-MacBook-C02Q61ADFVH6"/>
+                <label name="thread" value="18333@Tubi-MacBook-C02Q61ADFVH6.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1524087150249" stop="1524087167290" status="passed">
+            <name>chrome</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Surefire suite"/>
+                <label name="testGroup" value="Surefire test"/>
+                <label name="testClass" value="ActivationCode"/>
+                <label name="testMethod" value="chrome"/>
+                <label name="host" value="Tubi-MacBook-C02Q61ADFVH6"/>
+                <label name="thread" value="18333@Tubi-MacBook-C02Q61ADFVH6.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1524087167294" stop="1524087188551" status="passed">
+            <name>fireFox</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Surefire suite"/>
+                <label name="testGroup" value="Surefire test"/>
+                <label name="testClass" value="ActivationCode"/>
+                <label name="testMethod" value="fireFox"/>
+                <label name="host" value="Tubi-MacBook-C02Q61ADFVH6"/>
+                <label name="thread" value="18333@Tubi-MacBook-C02Q61ADFVH6.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1524087188553" stop="1524087219930" status="passed">
+            <name>iOS</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Surefire suite"/>
+                <label name="testGroup" value="Surefire test"/>
+                <label name="testClass" value="ActivationCode"/>
+                <label name="testMethod" value="iOS"/>
+                <label name="host" value="Tubi-MacBook-C02Q61ADFVH6"/>
+                <label name="thread" value="18333@Tubi-MacBook-C02Q61ADFVH6.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

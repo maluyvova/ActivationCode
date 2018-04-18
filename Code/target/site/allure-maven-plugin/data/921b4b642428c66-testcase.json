@@ -1,0 +1,59 @@
+{
+  "uid" : "921b4b642428c66",
+  "name" : "iOS",
+  "title" : "I OS",
+  "time" : {
+    "start" : 1524087188553,
+    "stop" : 1524087219930,
+    "duration" : 31377
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "67bed6a2b16f3daa",
+    "name" : "Surefire suite : Surefire test",
+    "title" : "Surefire suite : Surefire test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "Surefire suite : Surefire test"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testMethod",
+    "value" : "iOS"
+  }, {
+    "name" : "host",
+    "value" : "Tubi-MacBook-C02Q61ADFVH6"
+  }, {
+    "name" : "testSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "thread",
+    "value" : "18333@Tubi-MacBook-C02Q61ADFVH6.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "ActivationCode"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "testGroup",
+    "value" : "Surefire test"
+  }, {
+    "name" : "suite-title",
+    "value" : "Surefire suite : Surefire test"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,53 @@
+{
+  "hosts" : [ {
+    "title" : "Tubi-MacBook-C02Q61ADFVH6",
+    "threads" : [ {
+      "title" : "18333@Tubi-MacBook-C02Q61ADFVH6.main(1)",
+      "testCases" : [ {
+        "uid" : "8a3b6a564d878e0b",
+        "name" : "android",
+        "title" : "Android",
+        "time" : {
+          "start" : 1524087103878,
+          "stop" : 1524087150244,
+          "duration" : 46366
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "c35c2f4fa33a75a5",
+        "name" : "chrome",
+        "title" : "Chrome",
+        "time" : {
+          "start" : 1524087150249,
+          "stop" : 1524087167290,
+          "duration" : 17041
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "14c0860684c2d2ab",
+        "name" : "fireFox",
+        "title" : "Fire fox",
+        "time" : {
+          "start" : 1524087167294,
+          "stop" : 1524087188551,
+          "duration" : 21257
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "921b4b642428c66",
+        "name" : "iOS",
+        "title" : "I OS",
+        "time" : {
+          "start" : 1524087188553,
+          "stop" : 1524087219930,
+          "duration" : 31377
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  } ]
+}
