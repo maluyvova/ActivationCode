@@ -12,5 +12,5 @@ public interface XpathForWebActivationSgnInScreen {
     String homebuttonAfterActivationDevice="//button[@class='Button Button--large']";
     String containerWithFeaturetTitles="//div[@class='Container _3tFJDnyICc']";
     String settingForIos="//div[@class='_3iDYyWLnYp']";
-    String signOutForios="//a[@data-reactid='94']";
+    String signOutForios="//a[@data-reactid='93']";
 }
